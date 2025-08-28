@@ -41,4 +41,4 @@ A simple, static portfolio of my CS projects with a focus on:
   code server side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatServer.java
 ---
 
-Download and run locally index.html
+Download and run locally index.html to access portfolio website
