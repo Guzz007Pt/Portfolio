@@ -7,7 +7,7 @@
   "demo": "",
   "writeup": "assets/mage-warfare-report.pdf",
   "image": "assets/cartas.png",
-  "meta": "6 playtests · ronda média 10→5 min"
+  "meta": "6 playtests ·  10-5 min game, board and cards ready"
 },
   {
   "title": "Controlo de Semáforos em Larga Escala — UX/Protótipo (Figma)",
@@ -17,17 +17,17 @@
   "demo": "https://www.figma.com/design/D7XzBUA0iVuekQDarKmRAI/Controlo-de-tr%C3%A2nsito?m=auto&t=ZPeEhSa0TKDu90aR-1",
   "writeup": "assets/Relatório controlo de semáforos.pdf",
   "image": "assets/controlo-image.png",
-  "meta": "liderança de equipa · 2 avaliações externas · protótipo interativo"
+  "meta": "Team leadership · 2 external evaluation · iterative prototype"
 }
 ,
   {
   "title": "Image Processing Notebook",
   "description": "Exploration notebook: filters, edge detection, and small performance notes.",
   "tech": ["Python", "Jupyter", "NumPy", "Matplotlib"],
-  "code": "https://github.com/<USER>/<REPO>",
-  "demo": "notebook/notebook.html",            
+  "code": "https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb",
+  "demo": "https://nbviewer.org/github/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb",            
   "writeup": "",                               
   "image": "assets/image-processing.jpg",      
-  "meta": "Runs in ~2.1s/cell on laptop i5"
+  "meta": "Basic MonteCarlo and A* in board games"
 }
 ]
