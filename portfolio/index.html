@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Graphics/Rendering</title>
+<link rel="icon" href="assets/favicon.svg">
+<style>
+  :root { --bg:#0b0e14; --text:#e6e6e6; --muted:#9bb1d6; --card:#111723; --edge:#1b2331; --acc:#7db8ff; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+  .wrap{max-width:1040px;margin:24px auto;padding:0 16px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  h1{font-size:28px;margin:0} h2{font-size:20px;margin:8px 0 12px}
+  a{color:var(--acc);text-decoration:none}
+  .muted{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+  .pill{display:inline-block;border:1px solid var(--edge);padding:4px 8px;border-radius:999px;font-size:12px;color:var(--muted);margin-right:6px}
+  .section{margin:18px 0}
+  .links a{margin-right:10px}
+  footer{margin:28px 0;color:var(--muted);font-size:14px}
+  img.thumb{width:100%;height:160px;object-fit:cover;border-radius:10px;border:1px solid var(--edge);background:#0a0f16}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Gustavo Martins</h1>
+      <div class="muted">Computer Science / Computer Graphics — Porto, PT</div>
+      <div class="links"><a href="mailto:you@email.com">gustavosamartins@email.com</a> · <a href="https://github.com/Guzz007Pt">GitHub</a> </div>
+    </div>
+    <div>
+      <span class="pill">Open to internships</span>
+      <span class="pill">C/Java/Python</span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>About</h2>
+    <p>CS finalist focusing on real-time rendering and game development. I am building a small, focused demo and documenting the results, saving early big projects I did. Looking for a <b>curricular internship</b> where I can ship a project and learn from a mentor.</p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div id="projects" class="grid"></div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div>
+      <span class="pill">WebGPU/WGSL (learning)</span>
+      <span class="pill">GLSL/HLSL (learning)</span>
+      <span class="pill">TypeScript (learning), C, Java, Python</span>
+      <span class="pill">Unity (familiar)</span>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Gustavo Martins</footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  async function loadProjects(){
+    try{
+      const res = await fetch('projects.json');
+      const items = await res.json();
+      const grid = document.getElementById('projects');
+      grid.innerHTML = '';
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const img = document.createElement('img');
+        img.className='thumb';
+        img.alt = p.title;
+        img.loading='lazy';
+        img.src = p.image || 'assets/placeholder.jpg';
+        const h3 = document.createElement('h3'); h3.textContent = p.title;
+        const desc = document.createElement('p'); desc.textContent = p.description;
+        const pills = document.createElement('div');
+        (p.tech||[]).forEach(t => {
+          const span=document.createElement('span'); span.className='pill'; span.textContent = t; pills.appendChild(span);
+        });
+        const links = document.createElement('div'); links.className='links';
+        if (p.code) { const a=document.createElement('a'); a.href=p.code; a.textContent='Code'; a.target='_blank'; links.appendChild(a); }
+        if (p.demo){ const a=document.createElement('a'); a.href=p.demo; a.textContent='Demo'; a.target='_blank'; links.appendChild(a); }
+        if (p.writeup){ const a=document.createElement('a'); a.href=p.writeup; a.textContent='Write‑up'; a.target='_blank'; links.appendChild(a); }
+        const meta = document.createElement('div'); meta.className='muted'; meta.textContent = p.meta || '';
+        card.append(img,h3,desc,pills,links,meta);
+        grid.appendChild(card);
+      });
+    }catch(e){
+      document.getElementById('projects').innerHTML = '<div class="muted">Add your projects to <code>projects.json</code>.</div>';
+    }
+  }
+  loadProjects();
+</script>
+</body>
+</html>

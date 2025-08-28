@@ -1,0 +1,33 @@
+[
+  {
+  "title": "Mage Warfare — Jogo de Cartas (Design & Balance)",
+  "description": "Jogo de tabuleiro com cartas: vitória ao eliminar adversários ou ao evoluir a torre; recurso de mana e um Efeito Global revelado a cada ronda.",
+  "tech": ["Game Design", "UX", "Figma", "Sheets"],
+  "code": "",
+  "demo": "",
+  "writeup": "assets/mage-warfare-report.pdf",
+  "image": "assets/cartas.png",
+  "meta": "6 playtests · ronda média 10→5 min"
+},
+  {
+  "title": "Controlo de Semáforos em Larga Escala — UX/Protótipo (Figma)",
+  "description": "Interface simples e intuitiva para monitorização e resposta a emergências numa rede de semáforos, pensada para uso empresarial.",
+  "tech": ["Figma", "UX", "Prototipagem", "Acessibilidade"],
+  "code": "",
+  "demo": "https://www.figma.com/design/D7XzBUA0iVuekQDarKmRAI/Controlo-de-tr%C3%A2nsito?m=auto&t=ZPeEhSa0TKDu90aR-1",
+  "writeup": "assets/Relatório controlo de semáforos.pdf",
+  "image": "assets/controlo-image.png",
+  "meta": "liderança de equipa · 2 avaliações externas · protótipo interativo"
+}
+,
+  {
+  "title": "Image Processing Notebook",
+  "description": "Exploration notebook: filters, edge detection, and small performance notes.",
+  "tech": ["Python", "Jupyter", "NumPy", "Matplotlib"],
+  "code": "https://github.com/<USER>/<REPO>",
+  "demo": "notebook/notebook.html",            
+  "writeup": "",                               
+  "image": "assets/image-processing.jpg",      
+  "meta": "Runs in ~2.1s/cell on laptop i5"
+}
+]
