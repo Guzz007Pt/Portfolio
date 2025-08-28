@@ -12,7 +12,7 @@ A simple, static portfolio of my CS projects with a focus on:
 - **`index.html`** — the portfolio page.
 - **`projects.json`** — all project cards (title, description, tech, links, image, meta).
 - **`assets/`** — screenshots and PDFs (reports/rules).
-- **`notebooks/`** — Jupyter notebook (e.g., *Game with baisc AI agents*).
+- **`notebooks/`** — Jupyter notebook (e.g., *Game with basic AI agents*).
 
 
 
@@ -29,7 +29,7 @@ A simple, static portfolio of my CS projects with a focus on:
 
 - **Games with AI — Jupyter Notebook**  
   Notebook exploring game-playing agents (e.g., search and learning approaches).  
-  _Demo (nbviewer):_ see link below
+  _Demo (nbviewer): https://nbviewer.org/github/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb
 
 ---
 
