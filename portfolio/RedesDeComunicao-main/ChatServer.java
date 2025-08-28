@@ -12,7 +12,7 @@ public class ChatServer{
     static private Map<String, Set<SocketChannel>> chatRooms = new ConcurrentHashMap<>();
     static private Map<SocketChannel, String> clientNames = new ConcurrentHashMap<>();
 
-    // Decoder for incoming text -- assume UTF-8
+    
     static private final Charset charset = Charset.forName("UTF8");
     static private final CharsetDecoder decoder = charset.newDecoder();
 
@@ -47,7 +47,7 @@ public class ChatServer{
 
                 while (it.hasNext()) {
                     SelectionKey key = it.next();
-                    it.remove(); // Remove the key to avoid processing it again
+                    it.remove(); 
 
                     if (key.isAcceptable()) {
                         ServerSocketChannel server = (ServerSocketChannel) key.channel();
@@ -290,3 +290,4 @@ public class ChatServer{
         }
     }
 }
+
