@@ -26,11 +26,16 @@ A simple, static portfolio of my CS projects with a focus on:
 
 - **Traffic Lights Control — Large-scale UX Prototype (Figma)**  
   Interface for monitoring emergencies across a network of signals; interactive flows and external evaluations.
+  Figma : https://www.figma.com/design/D7XzBUA0iVuekQDarKmRAI/Controlo-de-tr%C3%A2nsito?m=auto&t=xtJwgTr7dlaWLCf6-1
 
 - **Games with AI — Jupyter Notebook**  
   Notebook exploring game-playing agents (e.g., search and learning approaches).  
   _Demo (nbviewer): https://nbviewer.org/github/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb
 
+- **Simple Groupchat with client and server side**
+  Simple groupchat made to learn about networks
+  code client side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatClient.java
+  code server side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatServer.java
 ---
 
 Download and run locally index.html
