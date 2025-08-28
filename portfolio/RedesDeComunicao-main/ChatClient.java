@@ -7,27 +7,26 @@ import javax.swing.*;
 
 public class ChatClient {
 
-    // Variáveis relacionadas com a interface gráfica --- * NÃO MODIFICAR *
+  
     JFrame frame = new JFrame("Chat Client");
     private JTextField chatBox = new JTextField();
     private JTextArea chatArea = new JTextArea();
-    // --- Fim das variáveis relacionadas com a interface gráfica
+   
 
-    // Variáveis adicionais
+
     private Socket socket;
     private PrintWriter out;
     private BufferedReader in;
 
-    // Método a usar para acrescentar uma string à caixa de texto
-    // * NÃO MODIFICAR *
+    
     public void printMessage(final String message) {
         chatArea.append(message);
     }
 
-    // Construtor
+
     public ChatClient(String server, int port) throws IOException {
 
-        // Inicialização da interface gráfica --- * NÃO MODIFICAR *
+     
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
@@ -56,9 +55,7 @@ public class ChatClient {
                 chatBox.requestFocusInWindow();
             }
         });
-        // --- Fim da inicialização da interface gráfica
-
-        // Inicialização da conexão ao servidor
+      
         socket = new Socket(server, port);
         out = new PrintWriter(socket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -157,8 +154,7 @@ public class ChatClient {
         chatBox.setEditable(false);
     }
 
-    // Instancia o ChatClient e arranca-o invocando o seu método run()
-    // * NÃO MODIFICAR *
+   
     public static void main(String[] args) throws IOException {
         if (args.length != 2) {
             System.out.println("Usage: java ChatClient <server> <port>");
@@ -169,3 +165,4 @@ public class ChatClient {
     }
 
 }
+
