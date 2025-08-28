@@ -3,7 +3,7 @@
 A simple, static portfolio of my CS projects with a focus on:
 - **Game/UX Design** 
 - **AI in Games** 
-
+- **Learning Networks** 
 
 ---
 
