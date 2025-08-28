@@ -33,7 +33,8 @@ A simple, static portfolio of my CS projects with a focus on:
   _Demo (nbviewer): https://nbviewer.org/github/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb
 
 - **Simple Groupchat with client and server side**
-  Simple groupchat made to learn about networks
+
+   Simple groupchat made to learn about networks
 
   code client side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatClient.java
 
