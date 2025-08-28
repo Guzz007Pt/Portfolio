@@ -11,8 +11,8 @@ A simple, static portfolio of my CS projects with a focus on:
 
 - **`index.html`** — the portfolio page.
 - **`projects.json`** — all project cards (title, description, tech, links, image, meta).
-- **`assets/`** — screenshots and PDFs (reports/rules).
-- **`notebooks/`** — Jupyter notebook (e.g., *Game with basic AI agents*).
+- **`assets/`** — screenshots PDFs (reports/rules) and jupyter files.
+
 
 
 
