@@ -33,8 +33,4 @@ A simple, static portfolio of my CS projects with a focus on:
 
 ---
 
-## Run locally
-
-```bash
-python -m http.server 5173
-# open http://localhost:5173
+Download and run locally index.html
