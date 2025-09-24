@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Teams</h1>
+
+<table>
+  <tr>
+    <th>
+      teamID
+    </th>
+    <th>
+      name
+    </th>
+    <th>
+      placement
+    </th>
+  </tr>
+  {% for t in teams %}
+  <tr>
+    <td>
+      {{ t.teamID }}
+    </td> 
+    <td>
+      <a href="/teams/{{t.teamID}}/">{{ t.nome }}</a>
+    </td> 
+    <td>
+      {{d.placement }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}
