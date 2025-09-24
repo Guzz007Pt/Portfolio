@@ -1,19 +1,11 @@
 # Gustavo Martins — Portfolio
 
-A simple, static portfolio of my CS projects with a focus on:
+A simple portfolio of my CS projects:
 - **Game/UX Design** 
-- **AI in Games** 
-- **Learning Networks** 
-
----
-
-## What’s inside
-
-- **`index.html`** — the portfolio page.
-- **`projects.json`** — all project cards (title, description, tech, links, image, meta).
-- **`assets/`** — screenshots PDFs (reports/rules) and jupyter files.
-
-
+- **Serverchat/Clientchat**
+- **Compiler for Kotlin**
+- **MonteCarlo/A* in connect4**
+- **html search for database**
 
 
 ---
@@ -21,24 +13,29 @@ A simple, static portfolio of my CS projects with a focus on:
 ## Featured projects
 
 - **Mage Warfare — Board/Card Game (Design & Balance)**  
-  Designed mechanics, defined conflict priorities, and iterated through playtests.  
-  _Meta:_ 6 playtests · round time 10-5 min. Board and cards defined
+  Designed mechanics, 100 playable cards, and iterated through playtests.  
 
 - **Traffic Lights Control — Large-scale UX Prototype (Figma)**  
   Interface for monitoring emergencies across a network of signals; interactive flows and external evaluations.
   Figma : https://www.figma.com/design/D7XzBUA0iVuekQDarKmRAI/Controlo-de-tr%C3%A2nsito?m=auto&t=xtJwgTr7dlaWLCf6-1
 
 - **Games with AI — Jupyter Notebook**  
-  Notebook exploring game-playing agents (e.g., search and learning approaches).  
+  Application of Monte Carlo and A* algorithms in connect4 from scratch. 
   _Demo (nbviewer): https://nbviewer.org/github/Guzz007Pt/Portfolio/blob/main/portfolio/assets/notebook.ipynb
 
 - **Simple Groupchat with client and server side**
-
-   Simple groupchat made to learn about networks
+  Simple groupchat made to learn about networks
 
   code client side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatClient.java
 
   code server side: https://github.com/Guzz007Pt/Portfolio/blob/main/portfolio/RedesDeComunicao-main/ChatServer.java
+
+  - **DataBase and html site **
+    Creation of a database for League of Legends Worlds players and a website to search the database
+
+
+  - ** Compiler for kotlin**
+      Made the parser with ALex and Happy, had an AST, symbol table and  code generator for MIPS.
 ---
 
-Download and run locally index.html to access portfolio website
+
